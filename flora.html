@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flora</title>
+  <link rel="stylesheet" href="flora.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+</head>
+<body>
+  <!-- Gallery Section -->
+  <section class="box gallery">
+      <nav class="navbar">
+  <div class="nav-container">
+   <div class="nav-logo">🌸 Flora</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+         <li><a href="species.html">All</a></li>
+      <li><a href="fauna.html">Fauna</a></li>
+      <li><a href="conservation_effort.html">Conservation</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="my-gallery">
+      <!-- Sample images for species -->
+        <div class="gallery-item">
+  <img src="flora/1.jpg" alt="Vuyavuy Palm" class="gallery-img"
+    data-name="Vuyavuy Palm"
+    data-scientific="Phoenix hanceana var. philippinensis"
+    data-description="A dwarf palm endemic to Batanes, characterized by its solitary trunk and arching leaves."
+    data-status="Endemic"
+    data-location="Chavayan Village, Sabtang"
+    data-lat="20.4167" data-lng="121.9500">
+    <div class="gallery-caption">
+      Vuyavuy Palm<br>
+      <em>(Phoenix hanceana var. philippinensis)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/2.jpg" alt="Arius" class="gallery-img"
+    data-name="Arius"
+    data-scientific="Podocarpus costalis"
+    data-description="A coniferous shrub or small tree found in low forests; threatened by overexploitation for horticulture."
+    data-status="Vulnerable"
+    data-location="Limestone bluffs and coastal forest of Batanes"
+    data-lat="20.4167" data-lng="121.9500">
+    <div class="gallery-caption">
+      Arius<br>
+      <em>(Podocarpus costalis)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/3.jpg" alt="Philippine Lily" class="gallery-img"
+    data-name="Philippine Lily"
+    data-scientific="Lilium philippinense"
+    data-description="A white-flowered lily native to the Philippines; habitats are declining due to land conversion."
+    data-status="Endangered"
+    data-location="Mountainous areas of Batanes, including Basco"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Philippine Lily<br>
+      <em>(Lilium philippinense)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/4.jpg" alt="Vuhuan" class="gallery-img"
+    data-name="Vuhuan"
+    data-scientific="Diospyros philippinensis"
+    data-description="An evergreen tree producing sweet, aromatic fruits; locally known as Mabol."
+    data-status="Endemic"
+    data-location="Found in forested areas in Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Vuhuan<br>
+      <em>(Diospyros philippinensis)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/5.jpg" alt="Riwas" class="gallery-img"
+    data-name="Riwas"
+    data-scientific="Lycopodiella cernua"
+    data-description="A creeping, spore-bearing plant resembling moss; used in traditional medicine."
+    data-status="Least Concern"
+    data-location="Forested and shaded areas of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Riwas<br>
+      <em>(Lycopodiella cernua)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/6.jpg" alt="Valayvayan" class="gallery-img"
+    data-name="Valayvayan"
+    data-scientific="Selaginella tamariscina"
+    data-description="A resurrection plant that can survive desiccation; used ornamentally and medicinally."
+    data-status="Least Concern"
+    data-location="Moist and shaded forest floors of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Valayvayan<br>
+      <em>(Selaginella tamariscina)</em>
+    </div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="flora/8.jpg" alt="Kanarem" class="gallery-img"
+    data-name="Kanarem"
+    data-scientific="Diospyros maritima"
+    data-description="A tree species found in lowland forests and wooded thickets near beaches."
+    data-status="Endemic"
+    data-location="Coastal Forest of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Kanarem<br>
+      <em>(Diospyros maritima)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/24.jpg" alt="Karorotong" class="gallery-img"
+    data-name="Karorotong"
+    data-scientific="Argemone mexicana"
+    data-description="An herbaceous plant common in grasslands; known for its yellow sap used in traditional medicine."
+    data-status="Introduced"
+    data-location="Grasslands and distributed areas of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Karorotong<br>
+      <em>(Argemone mexicana)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/9.jpg" alt="Katawa" class="gallery-img"
+    data-name="Katawa"
+    data-scientific="Ricinus communis"
+    data-description="A shrub found in secondary forests; its oil is used for medicinal purposes."
+    data-status="Native"
+    data-location="Found in open fields and roadsides of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Katawa<br>
+      <em>(Ricinus communis)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/10.jpg" alt="Kabaka-baka" class="gallery-img"
+    data-name="Kabaka-baka"
+    data-scientific="Centella asiatica"
+    data-description="A creeping herb commonly found in wetland areas; traditionally used for its medicinal properties."
+    data-status="Least Concern"
+    data-location="Wetlands and shaded areas of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Kabaka-baka<br>
+      <em>(Centella asiatica)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/23.jpg" alt="Buntot Pakpak" class="gallery-img"
+    data-name="Buntot Pakpak"
+    data-scientific="Hibiscus tiliaceus"
+    data-description="A shrub or small tree commonly found along coasts, characterized by large yellow flowers."
+    data-status="Least Concern"
+    data-location="Coastal areas and riverbanks of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Buntot Pakpak<br>
+      <em>(Hibiscus tiliaceus)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/22.jpg" alt="Batanes Fern" class="gallery-img"
+    data-name="Batanes Fern"
+    data-scientific="Cyathea batanensis"
+    data-description="A rare fern species found exclusively in the highlands of Batanes; it thrives in moist, shaded areas."
+    data-status="Endemic"
+    data-location="Forested areas of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Batanes Fern<br>
+      <em>(Cyathea batanensis)</em>
+    </div>
+</div>
+
+
+<div class="gallery-item">
+  <img src="flora/21.jpg" alt="Tinabuan Fern" class="gallery-img"
+    data-name="Tinabuan Fern"
+    data-scientific="Nephrolepis exaltata"
+    data-description="A fern species that thrives in moist, shaded environments; native to Batanes."
+    data-status="Least Concern"
+    data-location="Moist and shaded forest floors of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Tinabuan Fern<br>
+      <em>(Nephrolepis exaltata)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/20.jpg" alt="Kakawate" class="gallery-img"
+    data-name="Kakawate"
+    data-scientific="Gliricidia sepium"
+    data-description="A fast-growing leguminous tree used for its medicinal properties and as a green manure in farming."
+    data-status="Least Concern"
+    data-location="Found in agricultural lands and roadsides  of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Kakawate<br>
+      <em>(Gliricidia sepium)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/19.jpg" alt="Bungang Hari" class="gallery-img"
+    data-name="Bungang Hari"
+    data-scientific="Ixora coccinea"
+    data-description="A small, ornamental shrub with vibrant red flowers, commonly grown in gardens."
+    data-status="Least Concern"
+    data-location="Gardens and forest edges of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Bungang Hari<br>
+      <em>(Ixora coccinea)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/18.jpg" alt="Banig Grass" class="gallery-img"
+    data-name="Banig Grass"
+    data-scientific="Scleria spp."
+    data-description="A type of grass used for making traditional woven mats (banig); important in the local culture."
+    data-status="Least Concern"
+    data-location="Wetlands and grasslands of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Banig Grass<br>
+      <em>(Scleria spp.)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/17.jpg" alt="Tanglad" class="gallery-img"
+    data-name="Tanglad"
+    data-scientific="Cymbopogon citratus"
+    data-description="Lemongrass, a perennial plant used for culinary purposes and medicinal remedies."
+    data-status="Least Concern"
+    data-location="Found in open fields and agricultural land in Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Tanglad<br>
+      <em>(Cymbopogon citratus)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/16.jpg" alt="Dagat ng Silver" class="gallery-img"
+    data-name="Dagat ng Silver"
+    data-scientific="Nymphaea nouchali"
+    data-description="An aquatic plant with striking white and purple flowers, found in freshwater lakes."
+    data-status="Least Concern"
+    data-location="Freshwater lakes and ponds of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Dagat ng Silver<br>
+      <em>(Nymphaea nouchali)</em>
+    </div>
+</div>
+
+<div class="gallery-item">
+  <img src="flora/15.jpg" alt="Ukon Orchid" class="gallery-img"
+    data-name="Ukon Orchid"
+    data-scientific="Dendrobium ukon"
+    data-description="A beautiful orchid with a light yellow hue, found in the foothills of Batanes."
+    data-status="Vulnerable"
+    data-location="Forested areas and limestone cliffs of Batanes"
+    data-lat="20.6442" data-lng="121.8939">
+    <div class="gallery-caption">
+      Ukon Orchid<br>
+      <em>(Dendrobium ukon)</em>
+    </div>
+</div>
+
+
+
+      <!-- Add more gallery items as necessary -->
+
+    </div>
+  </section>
+ <div id="infoModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close-button">&times;</span>
+    <div class="modal-image">
+      <img id="modalSpeciesImage" src="" alt="Species Image">
+    </div>
+    <h2 id="speciesName"></h2>
+    <ul class="facts">
+      <li><strong>Scientific Name:</strong> <span id="scientificName"></span></li>
+      <li><strong>Description:</strong> <span id="description"></span></li>
+      <li><strong>Status:</strong> <span id="status"></span></li>
+      <li><strong>Location:</strong> <span id="location"></span></li>
+    </ul>
+     <!-- NEW: Toggle Button -->
+    <div id="speciesMap"></div>
+  </div>
+</div>
+
+
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="flora.js"></script>
+</body>
+</html>

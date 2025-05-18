@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fauna</title>
+  <link rel="stylesheet" href="fauna.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+</head>
+<body>
+
+    
+  <!-- Gallery Section -->
+  <section class="box gallery">
+      <nav class="navbar">
+  <div class="nav-container">
+   <div class="nav-logo">🦜 FAUNA</div>
+
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+         <li><a href="species.html">All</a></li>
+      <li><a href="flora.html">Flora</a></li>
+      <li><a href="conservation_effort.html">Conservation</a></li>
+    </ul>
+  </div>
+</nav>
+      
+    <div class="my-gallery">
+      <!-- Sample images (add or replace as needed) -->
+    <div class="gallery-item">
+  <img src="fauna/1.jpg" alt="Batanes Pit Viper" class="gallery-img" 
+    data-name="Batanes Pit Viper"
+    data-scientific="Trimeresurus insularis"
+    data-habitat="Forests and Grasslands"
+    data-status="Endemic"
+    data-location="Mt. Iraya, Batan Island"
+    data-lat="20.4127" data-lng="121.9677"
+    data-description="A venomous pit viper endemic to Batanes, known for its greenish-brown coloration."> 
+    <div class="gallery-caption">
+    Batanes Pit Viper<br>
+    <em>(Trimeresurus insularis)</em>
+  </div>
+
+</div>
+        
+<div class="gallery-item">
+  <img src="fauna/2.jpg" alt="Ryukyu Flying Fox" class="gallery-img"
+    data-name="Ryukyu Flying Fox"
+    data-scientific="Pteropus dasymallus"
+    data-habitat="Forests"
+    data-status="Endangered"
+    data-location="Btaan Island"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A large fruit bat that aids in forest regeneration; also found in Sabtang.">
+     <div class="gallery-caption">
+    Ryukyu Flying Fox<br>
+    <em>(Pteropus dasymallus)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/3.jpg" alt="Batanes Bleeding-heart Dove" class="gallery-img"
+    data-name="Batanes Bleeding-heart Dove"
+    data-scientific="Gallicolumba luzonica"
+    data-habitat="Forest Edges"
+    data-status="Vulnerable"
+    data-location="Forested Areas of Batan Island"
+    data-lat="20.4192" data-lng="121.9677"
+    data-description="A rare and beautiful dove species found in Batanes with a distinctive red patch on its chest.">
+     <div class="gallery-caption">
+    Batanes Bleeding-heart Dove<br>
+    <em>(Gallicolumba luzonica)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/4.jpg" alt="Batanes Narrow-disked Gecko" class="gallery-img"
+    data-name="Batanes Narrow-disked Gecko"
+    data-scientific="Lepidodactylus balioburius"
+    data-habitat="Forests"
+    data-status="Endemic"
+    data-location="Batan Island"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="An endemic gecko species found only in the forests of Batanes, characterized by its narrow body.">
+     <div class="gallery-caption">
+    Batanes Narrow-disked Gecko<br>
+    <em>(Lepidodactylus balioburius)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/5.jpg" alt="Jarecki’s Flying Lizard" class="gallery-img"
+    data-name="Jarecki’s Flying Lizard"
+    data-scientific="Draco jareckii"
+    data-habitat="Forested Areas"
+    data-status="Endemic"
+    data-location="Forested Areas of Batan Island"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A gliding lizard endemic to Batanes, known for its ability to glide between trees.">
+     <div class="gallery-caption">
+    Jarecki’s Flying Lizard<br>
+    <em>(Draco jareckii)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/6.jpg" alt="Batanes Smooth-scaled Gecko" class="gallery-img"
+    data-name="Batanes Smooth-scaled Gecko"
+    data-scientific="Lepidodactylus balioburius"
+    data-habitat="Forests"
+    data-status="Endemic"
+    data-location="Mahatao Municipality, Batan Island"
+    data-lat="20.6442" data-lng="121.8939"
+    data-description="A gecko species endemic to Batanes, characterized by smooth scales and nocturnal behavior.">
+     <div class="gallery-caption">
+    Batanes Smooth-scaled Gecko<br>
+    <em>(Lepidodactylus balioburius)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/7.jpg" alt="Yellow-lipped Sea Krait" class="gallery-img"
+    data-name="Yellow-lipped Sea Krait"
+    data-scientific="Laticauda colubrina"
+    data-habitat="Coral Reefs"
+    data-status="Least Concern"
+    data-location="Coastal Waters of Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A venomous sea snake found in the waters around Batanes, known for its yellow mouth and banded body.">
+     <div class="gallery-caption">
+    Yellow-lipped Sea Krait<br>
+    <em>(Laticauda colubrina)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/8.jpg" alt="Olive Ridley Turtle" class="gallery-img"
+    data-name="Olive Ridley Turtle"
+    data-scientific="Lepidochelys olivacea"
+    data-habitat="Coastal Beaches"
+    data-status="Vulnerable"
+    data-location="Coastal Waters of Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A marine turtle species that occasionally nests on the beaches of Batanes.">
+     <div class="gallery-caption">
+    Olive Ridley Turtle<br>
+    <em>(Lepidochelys olivacea)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/9.jpg" alt="Lycodon alcalai" class="gallery-img"
+    data-name="Lycodon alcalai"
+    data-scientific="Lycodon alcalai"
+    data-habitat="Forests"
+    data-status="Not Evaluated"
+    data-location="Batan and Sabtang Island"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A snake species found in Batanes, often mistaken for a non-venomous species.">
+     <div class="gallery-caption">
+    Lycodon alcalai<br>
+    <em>(Lycodon alcalai)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/10.jpg" alt="Eutropis borealis" class="gallery-img"
+    data-name="Eutropis borealis"
+    data-scientific="Eutropis borealis"
+    data-habitat="Grasslands"
+    data-status="Least Concern"
+    data-location="Batan Island"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A common lizard species found in Batanes, living in open grasslands and forests.">
+     <div class="gallery-caption">
+    Eutropis borealis<br>
+    <em>(Eutropis borealis)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/11.jpg" alt="Marbled Water Monitor" class="gallery-img"
+    data-name="Marbled Water Monitor"
+    data-scientific="Varanus marmoratus"
+    data-habitat="Wetlands"
+    data-status="Not Evaluated"
+    data-location="Batanes Islands"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A large monitor lizard often found near water sources in Batanes.">
+     <div class="gallery-caption">
+    Marbled Water Monitor<br>
+    <em>(Varanus marmoratus)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/12.jpg" alt="Taiwan Green Pigeon" class="gallery-img"
+    data-name="Taiwan Green Pigeon"
+    data-scientific="Treron formosae"
+    data-habitat="Forests"
+    data-status="Near Threatened"
+    data-location="Batan and Sabtang Island"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A bird species found in Batanes, known for its green plumage.">
+     <div class="gallery-caption">
+    Taiwan Green Pigeon<br>
+    <em>(Treron formosae)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/13.jpg" alt="Ryukyu Scops-Owl" class="gallery-img"
+    data-name="Ryukyu Scops-Owl"
+    data-scientific="Otus elegans"
+    data-habitat="Forests"
+    data-status="Least Concern"
+    data-location="Forested areas of Batanes, near Basco"
+    data-lat="22.0511" data-lng="121.5408"
+    data-description="A small owl species found in Batanes and nearby regions.">
+     <div class="gallery-caption">
+    Ryukyu Scops-Owl<br>
+    <em>(Otus elegans)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/14.jpg" alt="Short-crested Monarch" class="gallery-img"
+    data-name="Short-crested Monarch"
+    data-scientific="Hypothymis helenae"
+    data-habitat="Forests"
+    data-status="Near Threatened"
+    data-location="Forested Areas of Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A bird species with a distinct crest, found in Batanes.">
+     <div class="gallery-caption">
+    Short-crested Monarch<br>
+    <em>(Hypothymis helenae)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/15.jpg" alt="Chinese Egret" class="gallery-img"
+    data-name="Chinese Egret"
+    data-scientific="Egretta eulophotes"
+    data-habitat="Coastal Wetlands"
+    data-status="Vulnerable"
+    data-location="Ivana Marine Sanctuary, Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A migratory bird species that passes through Batanes.">
+     <div class="gallery-caption">
+    Chinese Egret<br>
+    <em>(Egretta eulophotes)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/16.jpg" alt="Yellow Bunting" class="gallery-img"
+    data-name="Yellow Bunting"
+    data-scientific="Emberiza sulphurata"
+    data-habitat="Grasslands"
+    data-status="Vulnerable"
+    data-location="Open fields and coastal areas of Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A migratory bird species observed in Batanes during winter.">
+     <div class="gallery-caption">
+    Yellow Bunting<br>
+    <em>(Emberiza sulphurata)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/17.jpg" alt="Batan Scaly-toed Gecko" class="gallery-img"
+    data-name="Batan Scaly-toed Gecko"
+    data-scientific="Lepidodactylus balioburius"
+    data-habitat="Forested Areas"
+    data-status="Endemic"
+    data-location="BAtan Island"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A gecko species endemic to Batanes; little is known about its ecology.">
+     <div class="gallery-caption">
+    Batan Scaly-toed Gecko<br>
+    <em>(Lepidodactylus balioburius)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/18.jpg" alt="Gray-streaked Flycatcher" class="gallery-img"
+    data-name="Gray-streaked Flycatcher"
+    data-scientific="Muscicapa griseisticta"
+    data-habitat="Forests"
+    data-status="Least Concern"
+    data-location="Mixed and deciduous forests of Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A migratory bird species observed in Sabtang; known for its gray-streaked appearance.">
+     <div class="gallery-caption">
+    Gray-streaked Flycatcher<br>
+    <em>(Muscicapa griseisticta)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/19.jpg" alt="Philippine Bent-toed Gecko" class="gallery-img"
+    data-name="Philippine Bent-toed Gecko"
+    data-scientific="Cyrtodactylus philippinicus"
+    data-habitat="Forests"
+    data-status="Least Concern"
+    data-location="Mid-eleveation forest of Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A gecko species found in Batanes; characterized by its bent toes.">
+     <div class="gallery-caption">
+    Philippine Bent-toed Gecko<br>
+    <em>(Cyrtodactylus philippinicus)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/20.jpg" alt="Common House Gecko" class="gallery-img"
+    data-name="Common House Gecko"
+    data-scientific="C"
+    data-habitat="Human Dwellings"
+    data-status="Least Concern"
+    data-location="Found in homes, buildiings and trees across Batanes"
+    data-lat="20.4167" data-lng="121.9500"
+    data-description="A widespread gecko species commonly found in human dwellings; helps control insect populations.">
+     <div class="gallery-caption">
+    Common House Gecko<br>
+    <em>(Hemidactylus frenatus)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/21.jpg" alt="Hermit Crab" class="gallery-img"
+    data-name="Hermit Crab"
+    data-scientific="Coenobita spp."
+    data-habitat="Beaches"
+    data-status="Not Evaluated"
+    data-location="White Beach, Batan Island"
+    data-lat="20.4500" data-lng="121.9800"
+    data-description="Terrestrial hermit crabs commonly found along beaches; known for occupying various shells.">
+     <div class="gallery-caption">
+    Hermit Crab<br>
+    <em>(Coenobita spp.)</em>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="fauna/22.jpg" alt="Brittle Starfish" class="gallery-img"
+    data-name="Brittle Starfish"
+    data-scientific="Ophiuroidea"
+    data-habitat="Tidal Pools and Ocean Floors"
+    data-status="Not Evaluated"
+    data-location="Tidal pools and ocean floors near Batan Island"
+    data-lat="20.4192" data-lng="121.9677"
+    data-description="Echinoderms found in tidal pools and ocean floors; characterized by long, slender arms.">
+     <div class="gallery-caption">
+    Brittle Starfish<br>
+    <em>(Ophiuroidea)</em>
+  </div>
+</div>
+
+
+      <!-- Add more gallery items as needed -->
+    </div>
+  </section>
+
+  <!-- Modal Popup (everything combined here) -->
+  <div class="modal" id="infoModal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+
+      <!-- Image inside modal -->
+      <div class="modal-image">
+        <img src="" alt="Species Image" id="modalSpeciesImage"/>
+      </div>
+
+      <h1 id="speciesName"></h1>
+      <ul class="facts">
+        <li><strong>Scientific Name:</strong> <span id="scientificName"></span></li>
+        <li><strong>Habitat:</strong> <span id="habitat"></span></li>
+        <li><strong>Conservation Status:</strong> <span id="status"></span></li>
+          <li><strong>Description:</strong> <span id="description"></span></li>
+        <li>
+          <strong>Location:</strong> 
+          <span id="location"></span>
+        </li>
+      </ul>
+
+      <div class="map-container">
+         <div id="speciesMap" style="height: 250px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="fauna.js"></script>
+</body>
+</html>
